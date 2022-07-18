@@ -5,7 +5,10 @@ const DrugButtons = ({drugs}) => {
   return (
     <>
     {drugs.map((drug)=> (
-      <DrugButton drug={drug}/>
+      <DrugButton key={drug.id} drug={drug}/>
+      //Warning: Each child in a list should have a unique "key" prop.
+        // key must assigned to the elements we are returning to the map() iterator.
+        //https://www.geeksforgeeks.org/reactjs-keys/
     ))}
     </>
     

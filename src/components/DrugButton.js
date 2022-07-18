@@ -1,7 +1,6 @@
 const DrugButton = ({drug}) => {
-    
   return (
-    <button>{drug.name}</button>
+    <button className="btn">{drug.name}</button>
   )
 }
 

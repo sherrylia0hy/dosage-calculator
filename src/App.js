@@ -20,7 +20,8 @@ function App() {
         "dog",
         "cat"
       ],
-      weight: "all"
+      weight: "all",
+      id:1
     },
     {
       name: "Acepromazine",
@@ -34,7 +35,8 @@ function App() {
       species: [
         "dog"
       ],
-      weight: "lower 20"
+      weight: "lower 20",
+      id:2
     },
     {
       name: "Dexmedetomidine",
@@ -48,7 +50,8 @@ function App() {
       species: [
         "cat"
       ],
-      weight: "over 20"
+      weight: "over 20",
+      id:3
     }
   ])
 
