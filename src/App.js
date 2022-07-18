@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from "react"
+import DrugButtons from './components/DrugButtons';
 
 function App() {
   const [drugs, setdrugs] = useState([
@@ -50,7 +51,7 @@ function App() {
   ])
 
   return (
-
+    <DrugButtons drugs={drugs}/>
   );
 }
 
