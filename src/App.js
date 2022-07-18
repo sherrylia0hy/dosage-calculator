@@ -1,6 +1,8 @@
 import './App.css';
 import { useState } from "react"
 import DrugButtons from './components/DrugButtons';
+import InputForm from './components/InputForm';
+import OutputCard from './components/OutputCard';
 
 function App() {
   const [drugs, setdrugs] = useState([
@@ -51,7 +53,11 @@ function App() {
   ])
 
   return (
-    <DrugButtons drugs={drugs}/>
+    <div className="container">
+      <InputForm />
+      <DrugButtons drugs={drugs}/>
+      <OutputCard />
+    </div>
   );
 }
 
