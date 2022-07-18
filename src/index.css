@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn {
+  color:black;
+  background-color: rgb(255, 191, 114);
+  padding: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 1em;
+}
+
+.select.btn {
+  background-color: rgb(255, 140, 0);
+}
