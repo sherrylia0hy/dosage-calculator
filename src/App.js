@@ -67,6 +67,9 @@ function App() {
 //TODO: Add toggle option for kg and lb
   return (
     <div className="container">
+      <h1 className="text-3xl font-bold underline">
+        Dosage Calculator
+      </h1>
       <InputForm weight={weight} setWeight={setWeight}/>
       <DrugButtons drugs={drugs} toggleSelect={toggleSelect}/>
       <OutputCards drugs={drugs} weight={weight}/>
