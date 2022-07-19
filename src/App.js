@@ -66,8 +66,8 @@ function App() {
 }
 //TODO: Add toggle option for kg and lb
   return (
-    <div className="container">
-      <h1 className="text-3xl font-bold underline">
+    <div className="container mx-auto w-10/12 md:w-11/12">
+      <h1 className="mx-auto w-max my-8 text-3xl font-bold underline">
         Dosage Calculator
       </h1>
       <InputForm weight={weight} setWeight={setWeight}/>
