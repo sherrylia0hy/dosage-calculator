@@ -2,7 +2,8 @@ import './App.css';
 import { useState } from "react"
 import DrugButtons from './components/DrugButtons';
 import InputForm from './components/InputForm';
-import OutputCard from './components/OutputCard';
+import OutputCard from './components/OutputCards';
+import OutputCards from './components/OutputCards';
 
 function App() {
   const [drugs, setDrugs] = useState([
@@ -68,7 +69,7 @@ function App() {
     <div className="container">
       <InputForm weight={weight} setWeight={setWeight}/>
       <DrugButtons drugs={drugs} toggleSelect={toggleSelect}/>
-      <OutputCard />
+      <OutputCards drugs={drugs} weight={weight}/>
     </div>
   );
 }
