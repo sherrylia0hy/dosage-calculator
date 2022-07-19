@@ -3,7 +3,7 @@ import { useState } from "react"
 const DrugButton = ({drug, toggleSelect, select}) => {
  
   return (
-    <button className={"text-slate-700 p-4 rounded-full hover:bg-sky-300 " + (select ? "bg-sky-300":"bg-sky-600")} onClick={()=>toggleSelect(drug.id)}>{drug.name}</button>
+    <button className={"text-gray-300 px-4 py-1 rounded-full ring-1 ring-gray-300 hover:bg-sky-300 hover:text-gray-700 hover:ring-gray-700 " + (select ? "bg-sky-600 text-gray-300 ring-gray-700":"bg-transparent")} onClick={()=>toggleSelect(drug.id)}>{drug.name}</button>
   )
 }
 
