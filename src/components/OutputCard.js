@@ -6,8 +6,8 @@ const OutputCard = ({drug, weight}) => {
   return (
     <div className="w-full md:w-max card p-6 ring-1 ring-gray-300 rounded-lg">
         <h1 className="text-xl font-bold">{drug.name}</h1>
-        <h1 className="text-2xl font-bold underline">{amount}ml</h1>
-        <input className="w-auto px-4 h-10 my-3 ring-1 ring-stone-800/10 rounded-lg placeholder:text-slate-400"type="number" />
+        <h1 className="text-2xl font-bold underline">{amount} ml</h1>
+        <input className="w-full ring-1 ring-gray-300 bg-transparent px-4 h-10 my-3 rounded-lg placeholder:text-slate-400"type="number" />
         <ul>
             <li>Dosage:{drug.dosage_floor}~{drug.dosage_ciel}</li>
             <li>Injection way:{drug.injection}</li>
