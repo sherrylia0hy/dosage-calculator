@@ -64,7 +64,7 @@ function App() {
     setDrugs(drugs.map((drug)=>drug.id === id ? {...drug, select: !drug.select}:drug))
    
 }
-
+//TODO: Add toggle option for kg and lb
   return (
     <div className="container">
       <InputForm weight={weight} setWeight={setWeight}/>
