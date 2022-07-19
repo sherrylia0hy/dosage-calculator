@@ -54,10 +54,11 @@ function App() {
       id:3
     }
   ])
+  const [weight, setWeight] = useState([])
 
   return (
     <div className="container">
-      <InputForm />
+      <InputForm weight={weight} setWeight={setWeight}/>
       <DrugButtons drugs={drugs}/>
       <OutputCard />
     </div>
