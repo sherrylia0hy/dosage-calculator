@@ -1,12 +1,9 @@
 import { useState } from "react"
 
-const DrugButton = ({drug}) => {
-    const [select, setSelect] = useState(false)
-    const toggle=(drugName)=>{
-        setSelect(!select)
-    }
+const DrugButton = ({drug, toggleSelect, select}) => {
+ 
   return (
-    <button className={select ? "select btn":"btn"} onClick={()=>toggle(drug)}>{drug.name}</button>
+    <button className={select ? "select btn":"btn"} onClick={()=>toggleSelect(drug.id)}>{drug.name}</button>
   )
 }
 

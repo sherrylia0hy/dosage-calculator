@@ -5,7 +5,7 @@ import InputForm from './components/InputForm';
 import OutputCard from './components/OutputCard';
 
 function App() {
-  const [drugs, setdrugs] = useState([
+  const [drugs, setDrugs] = useState([
     {
       name: "Midazolam",
       injection: [
@@ -21,7 +21,8 @@ function App() {
         "cat"
       ],
       weight: "all",
-      id:1
+      id:1,
+      select:false
     },
     {
       name: "Acepromazine",
@@ -36,7 +37,8 @@ function App() {
         "dog"
       ],
       weight: "lower 20",
-      id:2
+      id:2,
+      select:false
     },
     {
       name: "Dexmedetomidine",
@@ -51,15 +53,21 @@ function App() {
         "cat"
       ],
       weight: "over 20",
-      id:3
+      id:3,
+      select:false
     }
   ])
   const [weight, setWeight] = useState([])
 
+  const toggleSelect=(id)=>{
+    setDrugs(drugs.map((drug)=>drug.id === id ? {...drug, select: !drug.select}:drug))
+   
+}
+
   return (
     <div className="container">
       <InputForm weight={weight} setWeight={setWeight}/>
-      <DrugButtons drugs={drugs}/>
+      <DrugButtons drugs={drugs} toggleSelect={toggleSelect}/>
       <OutputCard />
     </div>
   );
