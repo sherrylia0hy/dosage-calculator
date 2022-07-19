@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dosage-calculator/static/css/main.52bf6202.css",
-    "main.js": "/dosage-calculator/static/js/main.8142e18e.js",
-    "static/js/787.1a904719.chunk.js": "/dosage-calculator/static/js/787.1a904719.chunk.js",
-    "index.html": "/dosage-calculator/index.html",
-    "main.52bf6202.css.map": "/dosage-calculator/static/css/main.52bf6202.css.map",
-    "main.8142e18e.js.map": "/dosage-calculator/static/js/main.8142e18e.js.map",
-    "787.1a904719.chunk.js.map": "/dosage-calculator/static/js/787.1a904719.chunk.js.map"
+    "main.css": "/static/css/main.80f57595.css",
+    "main.js": "/static/js/main.144b2cea.js",
+    "static/js/787.1a904719.chunk.js": "/static/js/787.1a904719.chunk.js",
+    "index.html": "/index.html",
+    "main.80f57595.css.map": "/static/css/main.80f57595.css.map",
+    "main.144b2cea.js.map": "/static/js/main.144b2cea.js.map",
+    "787.1a904719.chunk.js.map": "/static/js/787.1a904719.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52bf6202.css",
-    "static/js/main.8142e18e.js"
+    "static/css/main.80f57595.css",
+    "static/js/main.144b2cea.js"
   ]
 }
